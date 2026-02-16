@@ -229,7 +229,11 @@ if exchange_status:
         st.markdown(detail_html, unsafe_allow_html=True)
 
 # ── Gather data ──────────────────────────────────────────────────────────────
-all_symbols = db.get_available_symbols()
+@st.cache_data(ttl=300)
+def _cached_symbols():
+    return db.get_available_symbols()
+
+all_symbols = _cached_symbols()
 if not all_symbols:
     st.warning("No data yet. Run: `python scripts/bootstrap.py --symbols ALL --days 30`")
     st.stop()

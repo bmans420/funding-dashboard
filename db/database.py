@@ -119,11 +119,22 @@ class Database:
                 return [row['symbol'] for row in response.data]
         except Exception:
             pass
-        # Fallback: query table directly
-        response = self.client.table('funding_rates').select('symbol').execute()
-        if response.data:
-            return sorted(set(row['symbol'] for row in response.data))
-        return []
+        # Fallback: paginate ordered by symbol, skip past each seen symbol
+        symbols = []
+        last_sym = None
+        while True:
+            q = self.client.table('funding_rates').select('symbol').order('symbol').limit(1000)
+            if last_sym:
+                q = q.gt('symbol', last_sym)
+            response = q.execute()
+            if not response.data:
+                break
+            batch_symbols = sorted(set(row['symbol'] for row in response.data))
+            symbols.extend(batch_symbols)
+            last_sym = batch_symbols[-1]
+            if len(response.data) < 1000:
+                break
+        return sorted(set(symbols))
 
     def get_exchanges_for_symbol(self, symbol: str) -> List[str]:
         """Get all exchanges that have data for a symbol."""
@@ -135,13 +146,24 @@ class Database:
                 return [row['exchange'] for row in response.data]
         except Exception:
             pass
-        # Fallback: query table directly
-        response = self.client.table('funding_rates').select(
-            'exchange'
-        ).eq('symbol', symbol).execute()
-        if response.data:
-            return sorted(set(row['exchange'] for row in response.data))
-        return []
+        # Fallback: paginate ordered by exchange to collect all unique exchanges
+        exchanges = []
+        last_ex = None
+        while True:
+            q = self.client.table('funding_rates').select(
+                'exchange'
+            ).eq('symbol', symbol).order('exchange').limit(1000)
+            if last_ex:
+                q = q.gt('exchange', last_ex)
+            response = q.execute()
+            if not response.data:
+                break
+            batch = sorted(set(row['exchange'] for row in response.data))
+            exchanges.extend(batch)
+            last_ex = batch[-1]
+            if len(response.data) < 1000:
+                break
+        return sorted(set(exchanges))
 
     def get_reference_timestamps(self, symbol: str, start_time: int, end_time: int) -> dict:
         """Get the exchange with longest interval and its timestamps."""
@@ -165,7 +187,7 @@ class Database:
             'exchange', 'interval_hours'
         ).eq('symbol', symbol).gte(
             'funding_time', start_time
-        ).lte('funding_time', end_time).execute()
+        ).lte('funding_time', end_time).limit(1000).execute()
         if not response.data:
             return {}
         # Find exchange with max interval_hours
@@ -316,12 +338,20 @@ class Database:
 
     def get_symbols_for_exchange(self, exchange: str) -> List[str]:
         """Get distinct symbols for an exchange."""
-        response = self.client.table('funding_rates').select(
-            'symbol'
-        ).eq('exchange', exchange).execute()
-        
-        if response.data:
-            # Deduplicate in Python since Supabase doesn't have DISTINCT in select
-            symbols = set(row['symbol'] for row in response.data)
-            return sorted(list(symbols))
-        return []
+        symbols = []
+        last_sym = None
+        while True:
+            q = self.client.table('funding_rates').select(
+                'symbol'
+            ).eq('exchange', exchange).order('symbol').limit(1000)
+            if last_sym:
+                q = q.gt('symbol', last_sym)
+            response = q.execute()
+            if not response.data:
+                break
+            batch = sorted(set(row['symbol'] for row in response.data))
+            symbols.extend(batch)
+            last_sym = batch[-1]
+            if len(response.data) < 1000:
+                break
+        return sorted(set(symbols))
