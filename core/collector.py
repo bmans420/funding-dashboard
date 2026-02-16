@@ -14,7 +14,7 @@ class Collector:
     def __init__(self, config_path: str = "config.yaml", db: Optional[Database] = None):
         with open(config_path) as f:
             self.config = yaml.safe_load(f)
-        self.db = db or Database(self.config['database']['path'])
+        self.db = db or Database()
         # symbols from config is now optional — used as filter if present
         self._config_symbols = self.config.get('symbols', None)
         # Lazily populated HIP3 adapters

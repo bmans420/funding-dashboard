@@ -33,12 +33,12 @@ TOP_N = 10
 def main():
     logger.info("Starting Binance OI update")
     
-    # Initialize database connection using SUPABASE_URL and SUPABASE_KEY
+    # Initialize database connection using DATABASE_URL
     try:
         db = Database()
     except ValueError as e:
         logger.error(f"Database connection failed: {e}")
-        logger.error("Make sure SUPABASE_URL and SUPABASE_KEY environment variables are set")
+        logger.error("Make sure DATABASE_URL environment variable is set")
         return
     session = requests.Session()
     session.headers["User-Agent"] = "FundingDashboard/1.0"

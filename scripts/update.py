@@ -205,12 +205,12 @@ def main():
     with open("config.yaml") as f:
         config = yaml.safe_load(f)
 
-    # Initialize database connection using SUPABASE_URL and SUPABASE_KEY
+    # Initialize database connection using DATABASE_URL
     try:
         db = Database()
     except ValueError as e:
         logger.error(f"Database connection failed: {e}")
-        logger.error("Make sure SUPABASE_URL and SUPABASE_KEY environment variables are set")
+        logger.error("Make sure DATABASE_URL environment variable is set")
         return
     now_ms = int(time.time() * 1000)
     failure_tracker = load_failure_tracker()
