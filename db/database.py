@@ -112,45 +112,125 @@ class Database:
         return None
 
     def get_available_symbols(self) -> List[str]:
-        """Get all distinct symbols from funding_rates using RPC."""
-        response = self.client.rpc('get_distinct_symbols').execute()
+        """Get all distinct symbols from funding_rates."""
+        try:
+            response = self.client.rpc('get_distinct_symbols').execute()
+            if response.data:
+                return [row['symbol'] for row in response.data]
+        except Exception:
+            pass
+        # Fallback: query table directly
+        response = self.client.table('funding_rates').select('symbol').execute()
         if response.data:
-            return [row['symbol'] for row in response.data]
+            return sorted(set(row['symbol'] for row in response.data))
         return []
 
     def get_exchanges_for_symbol(self, symbol: str) -> List[str]:
-        """Get all exchanges that have data for a symbol using RPC."""
-        response = self.client.rpc('get_exchanges_for_symbol', {
-            'p_symbol': symbol
-        }).execute()
+        """Get all exchanges that have data for a symbol."""
+        try:
+            response = self.client.rpc('get_exchanges_for_symbol', {
+                'p_symbol': symbol
+            }).execute()
+            if response.data:
+                return [row['exchange'] for row in response.data]
+        except Exception:
+            pass
+        # Fallback: query table directly
+        response = self.client.table('funding_rates').select(
+            'exchange'
+        ).eq('symbol', symbol).execute()
         if response.data:
-            return [row['exchange'] for row in response.data]
+            return sorted(set(row['exchange'] for row in response.data))
         return []
 
     def get_reference_timestamps(self, symbol: str, start_time: int, end_time: int) -> dict:
-        """Get the exchange with longest interval and its timestamps using RPC."""
-        response = self.client.rpc('get_reference_timestamps', {
-            'p_symbol': symbol,
-            'p_start': start_time,
-            'p_end': end_time
-        }).execute()
-        
-        if response.data:
-            # RPC returns JSON, so we parse it
-            result = response.data
-            return {
-                'exchange': result.get('exchange'),
-                'interval_hours': result.get('interval_hours'),
-                'timestamps': result.get('timestamps', [])
-            }
-        return {}
+        """Get the exchange with longest interval and its timestamps."""
+        try:
+            response = self.client.rpc('get_reference_timestamps', {
+                'p_symbol': symbol,
+                'p_start': start_time,
+                'p_end': end_time
+            }).execute()
+            if response.data:
+                result = response.data
+                return {
+                    'exchange': result.get('exchange'),
+                    'interval_hours': result.get('interval_hours'),
+                    'timestamps': result.get('timestamps', [])
+                }
+        except Exception:
+            pass
+        # Fallback: find exchange with longest interval, then get its timestamps
+        response = self.client.table('funding_rates').select(
+            'exchange', 'interval_hours'
+        ).eq('symbol', symbol).gte(
+            'funding_time', start_time
+        ).lte('funding_time', end_time).execute()
+        if not response.data:
+            return {}
+        # Find exchange with max interval_hours
+        exchange_intervals = {}
+        for row in response.data:
+            ex = row['exchange']
+            ih = row.get('interval_hours', 8)
+            if ex not in exchange_intervals or ih > exchange_intervals[ex]:
+                exchange_intervals[ex] = ih
+        if not exchange_intervals:
+            return {}
+        ref_exchange = max(exchange_intervals, key=exchange_intervals.get)
+        ref_interval = exchange_intervals[ref_exchange]
+        # Get timestamps for that exchange
+        ts_response = self.client.table('funding_rates').select(
+            'funding_time'
+        ).eq('symbol', symbol).eq('exchange', ref_exchange).gte(
+            'funding_time', start_time
+        ).lte('funding_time', end_time).order('funding_time', desc=False).execute()
+        timestamps = [row['funding_time'] for row in ts_response.data] if ts_response.data else []
+        return {
+            'exchange': ref_exchange,
+            'interval_hours': ref_interval,
+            'timestamps': timestamps
+        }
 
     def get_exchange_status(self) -> List[Dict[str, Any]]:
-        """Get per-exchange update status using RPC."""
-        response = self.client.rpc('get_exchange_status').execute()
-        if response.data:
-            return response.data
-        return []
+        """Get per-exchange update status."""
+        try:
+            response = self.client.rpc('get_exchange_status').execute()
+            if response.data:
+                return response.data
+        except Exception:
+            pass
+        # Fallback: build status from table data
+        response = self.client.table('funding_rates').select(
+            'exchange', 'symbol', 'funding_time', 'fetched_at'
+        ).order('fetched_at', desc=True).limit(1000).execute()
+        if not response.data:
+            return []
+        status = {}
+        for row in response.data:
+            ex = row['exchange']
+            if ex not in status:
+                status[ex] = {
+                    'exchange': ex,
+                    'symbols': set(),
+                    'latest_funding_time': row['funding_time'],
+                    'latest_fetched_at': row['fetched_at'],
+                    'record_count': 0
+                }
+            status[ex]['symbols'].add(row['symbol'])
+            status[ex]['record_count'] += 1
+            if row['funding_time'] > status[ex]['latest_funding_time']:
+                status[ex]['latest_funding_time'] = row['funding_time']
+        result = []
+        for ex, s in status.items():
+            result.append({
+                'exchange': s['exchange'],
+                'symbol_count': len(s['symbols']),
+                'latest_funding_time': s['latest_funding_time'],
+                'latest_fetched_at': s['latest_fetched_at'],
+                'record_count': s['record_count']
+            })
+        return result
 
     def get_total_records(self) -> int:
         """Get total number of funding rate records."""
