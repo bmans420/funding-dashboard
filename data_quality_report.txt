@@ -1,0 +1,954 @@
+==========================================================================================
+  FUNDING RATE DATA QUALITY REPORT
+  Generated: 2026-02-15 16:44 UTC
+==========================================================================================
+
+  Exchanges: 5 (binance, bitget, bybit, hyperliquid, lighter)
+  Symbols:   572
+  Combos:    662
+  Total duplicates: 0
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Exchange       Symbol      Records  Expected   Cvg%   Days  Gaps  Dupes
+──────────────────────────────────────────────────────────────────────────────────────────
+  binance        0G               62         9 100.0%     3d     0     0
+  binance        1000000BOB       18         9 100.0%     3d     0     0
+  binance        1000000MOG       18         9 100.0%     3d     0     0
+  binance        1000BONK         18         9 100.0%     3d     0     0
+  binance        1000CAT          18         9 100.0%     3d     0     0
+  binance        1000CHEEMS       18         9 100.0%     3d     0     0
+  binance        1000FLOKI         9         8 100.0%     3d     0     0
+  binance        1000LUNC          9         8 100.0%     3d     0     0
+  binance        1000PEPE          9         8 100.0%     3d     0     0
+  binance        1000RATS         18         9 100.0%     3d     0     0
+  binance        1000SATS         18         9 100.0%     3d     0     0
+  binance        1000SHIB         90        90 100.0%    30d     0     0
+  binance        1000WHY         180        90 100.0%    30d     0     0
+  binance        1000XEC          90        90 100.0%    30d     0     0
+  binance        1INCH             9         8 100.0%     3d     0     0
+  binance        1MBABYDOGE      180        90 100.0%    30d     0     0
+  binance        2Z              180        90 100.0%    30d     0     0
+  binance        4               180        90 100.0%    30d     0     0
+  binance        A               180        90 100.0%    30d     0     0
+  binance        A2Z             180        90 100.0%    30d     0     0
+  binance        AAVE             90        90 100.0%    30d     0     0
+  binance        ACE             180        90 100.0%    30d     0     0
+  binance        ACH              90        90 100.0%    30d     0     0
+  binance        ACT             180        90 100.0%    30d     0     0
+  binance        ACU             151        75 100.0%    25d     0     0
+  binance        ACX             180        90 100.0%    30d     0     0
+  binance        ADA              90        90 100.0%    30d     0     0
+  binance        AERGO            18         9 100.0%     3d     0     0
+  binance        AERO            180        90 100.0%    30d     0     0
+  binance        AEVO            180        90 100.0%    30d     0     0
+  binance        AGLD             90        90 100.0%    30d     0     0
+  binance        AGT             180        90 100.0%    30d     0     0
+  binance        AI              180        90 100.0%    30d     0     0
+  binance        AIA             160        80 100.0%    26d     0     0
+  binance        AIN             180        90 100.0%    30d     0     0
+  binance        AIO             180        90 100.0%    30d     0     0
+  binance        AIOT            180        90 100.0%    30d     0     0
+  binance        AIXBT           180        90 100.0%    30d     0     0
+  binance        AKE             180        90 100.0%    30d     0     0
+  binance        AKT             180        90 100.0%    30d     0     0
+  binance        ALCH            180        90 100.0%    30d     0     0
+  binance        ALGO             90        90 100.0%    30d     0     0
+  binance        ALICE            90        90 100.0%    30d     0     0
+  binance        ALL               9         8 100.0%     3d     0     0
+  binance        ALLO             18         9 100.0%     3d     0     0
+  binance        ALPINE           18         9 100.0%     3d     0     0
+  binance        ALT              18         9 100.0%     3d     0     0
+  binance        AMZN              9         9 100.0%     3d     0     0
+  binance        ANIME            18         9 100.0%     3d     0     0
+  binance        ANKR              9         8 100.0%     3d     0     0
+  binance        APE               9         8 100.0%     3d     0     0
+  binance        API3             18         9 100.0%     3d     0     0
+  binance        APR              18         9 100.0%     3d     0     0
+  binance        APT               9         8 100.0%     3d     0     0
+  binance        AR                9         8 100.0%     3d     0     0
+  binance        ARB               9         8 100.0%     3d     0     0
+  binance        ARC              18         9 100.0%     3d     0     0
+  binance        ARIA             18         9 100.0%     3d     0     0
+  binance        ARK              18         9 100.0%     3d     0     0
+  binance        ARKM              9         8 100.0%     3d     0     0
+  binance        ARPA              9         8 100.0%     3d     0     0
+  binance        ASR              18         9 100.0%     3d     0     0
+  binance        ASTER            18         9 100.0%     3d     0     0
+  binance        ASTR              9         8 100.0%     3d     0     0
+  binance        AT               18         9 100.0%     3d     0     0
+  binance        ATA               9         8 100.0%     3d     0     0
+  binance        ATH              18         9 100.0%     3d     0     0
+  binance        ATOM              9         8 100.0%     3d     0     0
+  binance        AUCTION          18         9 100.0%     3d     0     0
+  binance        AVA              18         9 100.0%     3d     0     0
+  binance        AVAAI            18         9 100.0%     3d     0     0
+  binance        AVAX              9         8 100.0%     3d     0     0
+  binance        AVNT             18         9 100.0%     3d     0     0
+  binance        AWE              18         9 100.0%     3d     0     0
+  binance        AXL              18         9 100.0%     3d     0     0
+  binance        AXS              18         9 100.0%     3d     0     0
+  binance        AZTEC            18         9 100.0%     3d     0     0
+  binance        B                18         9 100.0%     3d     0     0
+  binance        B2               18         9 100.0%     3d     0     0
+  binance        B3               18         9 100.0%     3d     0     0
+  binance        BABY             18         9 100.0%     3d     0     0
+  binance        BAN              18         9 100.0%     3d     0     0
+  binance        BANANA           18         9 100.0%     3d     0     0
+  binance        BANANAS31        18         9 100.0%     3d     0     0
+  binance        BAND              9         8 100.0%     3d     0     0
+  binance        BANK             18         9 100.0%     3d     0     0
+  binance        BARD             18         9 100.0%     3d     0     0
+  binance        BAS              18         9 100.0%     3d     0     0
+  binance        BAT               9         8 100.0%     3d     0     0
+  binance        BB               18         9 100.0%     3d     0     0
+  binance        BCH               9         8 100.0%     3d     0     0
+  binance        BDXN             18         9 100.0%     3d     0     0
+  binance        BEAMX            18         9 100.0%     3d     0     0
+  binance        BEAT             18         9 100.0%     3d     0     0
+  binance        BEL               9         8 100.0%     3d     0     0
+  binance        BERA             18         9 100.0%     3d     0     0
+  binance        BICO              9         8 100.0%     3d     0     0
+  binance        BIGTIME          18         9 100.0%     3d     0     0
+  binance        BIO              18         9 100.0%     3d     0     0
+  binance        BIRB             18         9 100.0%     3d     0     0
+  binance        BLESS            18         9 100.0%     3d     0     0
+  binance        BLUAI            18         9 100.0%     3d     0     0
+  binance        BLUR              9         8 100.0%     3d     0     0
+  binance        BMT              18         9 100.0%     3d     0     0
+  binance        BNB               9         8 100.0%     3d     0     0
+  binance        BNT               9         8 100.0%     3d     0     0
+  binance        BOB              18         9 100.0%     3d     0     0
+  binance        BOME             18         9 100.0%     3d     0     0
+  binance        BR               18         9 100.0%     3d     0     0
+  binance        BRETT            18         9 100.0%     3d     0     0
+  binance        BREV             18         9 100.0%     3d     0     0
+  binance        BROCCOLI714       18         9 100.0%     3d     0     0
+  binance        BROCCOLIF3B       18         9 100.0%     3d     0     0
+  binance        BSV              18         9 100.0%     3d     0     0
+  binance        BTC              91        90 100.0%    30d     0     0
+  binance        BTCDOM            9         8 100.0%     3d     0     0
+  binance        BTR              18         9 100.0%     3d     0     0
+  binance        BULLA            18         9 100.0%     3d     0     0
+  binance        C                18         9 100.0%     3d     0     0
+  binance        C98               9         8 100.0%     3d     0     0
+  binance        CAKE             18         9 100.0%     3d     0     0
+  binance        CARV             18         9 100.0%     3d     0     0
+  binance        CATI            180        90 100.0%    30d     0     0
+  binance        CC              180        90 100.0%    30d     0     0
+  binance        CELO             90        90 100.0%    30d     0     0
+  binance        CELR             90        90 100.0%    30d     0     0
+  binance        CETUS           180        90 100.0%    30d     0     0
+  binance        CFX              90        90 100.0%    30d     0     0
+  binance        CGPT            180        90 100.0%    30d     0     0
+  binance        CHILLGUY        180        90 100.0%    30d     0     0
+  binance        CHR              90        90 100.0%    30d     0     0
+  binance        CHZ              90        90 100.0%    30d     0     0
+  binance        CKB              90        90 100.0%    30d     0     0
+  binance        CLANKER         180        90 100.0%    30d     0     0
+  binance        CLO             184        90 100.0%    30d     0     0
+  binance        COAI            180        90 100.0%    30d     0     0
+  binance        COIN             28        28 100.0%     9d     0     0
+  binance        COLLECT         180        90 100.0%    30d     0     0
+  binance        COMP             89        90  98.9%    30d     0     0
+  binance        COOKIE          180        90 100.0%    30d     0     0
+  binance        COS             180        90 100.0%    30d     0     0
+  binance        COTI             90        90 100.0%    30d     0     0
+  binance        COW             179        90 100.0%    30d     0     0
+  binance        CRCL             28        28 100.0%     9d     0     0
+  binance        CROSS           180        90 100.0%    30d     0     0
+  binance        CRV              90        90 100.0%    30d     0     0
+  binance        CTK             180        90 100.0%    30d     0     0
+  binance        CTSI             90        90 100.0%    30d     0     0
+  binance        CVC             180        90 100.0%    30d     0     0
+  binance        CVX             180        90 100.0%    30d     0     0
+  binance        CYBER           180        90 100.0%    30d     0     0
+  binance        CYS             180        90 100.0%    30d     0     0
+  binance        D               179        90 100.0%    30d     0     0
+  binance        DAM             180        90 100.0%    30d     0     0
+  binance        DASH             89        90  98.9%    30d     0     0
+  binance        DEEP            180        90 100.0%    30d     0     0
+  binance        DEGEN           180        90 100.0%    30d     0     0
+  binance        DEGO            180        90 100.0%    30d     0     0
+  binance        DENT             90        90 100.0%    30d     0     0
+  binance        DEXE            180        90 100.0%    30d     0     0
+  binance        DIA             180        90 100.0%    30d     0     0
+  binance        DODOX           180        90 100.0%    30d     0     0
+  binance        DOGE             90        90 100.0%    30d     0     0
+  binance        DOGS            180        90 100.0%    30d     0     0
+  binance        DOLO            180        90 100.0%    30d     0     0
+  binance        DOOD            180        90 100.0%    30d     0     0
+  binance        DOT              90        90 100.0%    30d     0     0
+  binance        DRIFT           180        90 100.0%    30d     0     0
+  binance        DUSK            250        89 100.0%    29d     1     0
+  binance        DYDX             90        90 100.0%    30d     0     0
+  binance        DYM             179        90 100.0%    30d     0     0
+  binance        EDEN            180        90 100.0%    30d     0     0
+  binance        EDU              90        90 100.0%    30d     0     0
+  binance        EGLD             90        90 100.0%    30d     0     0
+  binance        EIGEN           180        90 100.0%    30d     0     0
+  binance        ELSA            207        73 100.0%    24d     0     0
+  binance        ENA             180        90 100.0%    30d     0     0
+  binance        ENJ              89        90  98.9%    30d     0     0
+  binance        ENS              90        90 100.0%    30d     0     0
+  binance        ENSO            170        90 100.0%    30d     0     0
+  binance        EPIC            180        90 100.0%    30d     0     0
+  binance        ERA             180        90 100.0%    30d     0     0
+  binance        ESP              32        16 100.0%     5d     0     0
+  binance        ESPORTS         180        90 100.0%    30d     0     0
+  binance        ETC              90        90 100.0%    30d     0     0
+  binance        ETH              91        90 100.0%    30d     0     0
+  binance        ETHFI           180        90 100.0%    30d     0     0
+  binance        ETHW            180        90 100.0%    30d     0     0
+  binance        EUL             180        90 100.0%    30d     0     0
+  binance        EVAA            180        90 100.0%    30d     0     0
+  binance        F               176        90 100.0%    30d     0     0
+  binance        FARTCOIN        180        90 100.0%    30d     0     0
+  binance        FET              90        90 100.0%    30d     0     0
+  binance        FF              180        90 100.0%    30d     0     0
+  binance        FHE             180        90 100.0%    30d     0     0
+  binance        FIDA            180        90 100.0%    30d     0     0
+  binance        FIGHT           140        70 100.0%    23d     0     0
+  binance        FIL              90        90 100.0%    30d     0     0
+  binance        FIO             180        90 100.0%    30d     0     0
+  binance        FLOCK           180        90 100.0%    30d     0     0
+  binance        FLOW            191        90 100.0%    30d     0     0
+  binance        FLUID           180        90 100.0%    30d     0     0
+  binance        FLUX            180        90 100.0%    30d     0     0
+  binance        FOGO            180        90 100.0%    30d     0     0
+  binance        FOLKS           180        90 100.0%    30d     0     0
+  binance        FORM            180        90 100.0%    30d     0     0
+  binance        FORTH           180        90 100.0%    30d     0     0
+  binance        FRAX            173        90 100.0%    30d     1     0
+  binance        FUN             180        90 100.0%    30d     0     0
+  binance        G               178        90 100.0%    30d     0     0
+  binance        GALA             90        90 100.0%    30d     0     0
+  binance        GAS             178        90 100.0%    30d     0     0
+  binance        GIGGLE          180        90 100.0%    30d     0     0
+  binance        GLM             180        90 100.0%    30d     0     0
+  binance        GMT             180        90 100.0%    30d     0     0
+  binance        GMX              90        90 100.0%    30d     0     0
+  binance        GOAT            180        90 100.0%    30d     0     0
+  binance        GPS             180        90 100.0%    30d     0     0
+  binance        GRASS            18         9 100.0%     3d     0     0
+  binance        GRIFFAIN         18         9 100.0%     3d     0     0
+  binance        GRT               9         8 100.0%     3d     0     0
+  binance        GTC               9         8 100.0%     3d     0     0
+  binance        GUA              18         9 100.0%     3d     0     0
+  binance        GUN              18         9 100.0%     3d     0     0
+  binance        GWEI             18         9 100.0%     3d     0     0
+  binance        H                18         9 100.0%     3d     0     0
+  binance        HAEDAL           18         9 100.0%     3d     0     0
+  binance        HANA             18         9 100.0%     3d     0     0
+  binance        HBAR              9         8 100.0%     3d     0     0
+  binance        HEI              18         9 100.0%     3d     0     0
+  binance        HEMI             18         9 100.0%     3d     0     0
+  binance        HFT               9         8 100.0%     3d     0     0
+  binance        HIGH              9         8 100.0%     3d     0     0
+  binance        HIPPO            18         9 100.0%     3d     0     0
+  binance        HIVE             18         9 100.0%     3d     0     0
+  binance        HMSTR            18         9 100.0%     3d     0     0
+  binance        HOLO             18         9 100.0%     3d     0     0
+  binance        HOME             18         9 100.0%     3d     0     0
+  binance        HOOD              9         9 100.0%     3d     0     0
+  binance        HOOK              9         8 100.0%     3d     0     0
+  binance        HOT               9         8 100.0%     3d     0     0
+  binance        HUMA             18         9 100.0%     3d     0     0
+  binance        HYPE             18         9 100.0%     3d     0     0
+  binance        HYPER            18         9 100.0%     3d     0     0
+  binance        ICNT             18         9 100.0%     3d     0     0
+  binance        ICP               9         8 100.0%     3d     0     0
+  binance        ICX               9         8 100.0%     3d     0     0
+  binance        ID                9         8 100.0%     3d     0     0
+  binance        IDOL             18         9 100.0%     3d     0     0
+  binance        ILV              18         9 100.0%     3d     0     0
+  binance        IMX              18         9 100.0%     3d     0     0
+  binance        IN               18         9 100.0%     3d     0     0
+  binance        INIT             18         9 100.0%     3d     0     0
+  binance        INJ               9         8 100.0%     3d     0     0
+  binance        INTC              9         9 100.0%     3d     0     0
+  binance        INX              18         9 100.0%     3d     0     0
+  binance        IO               18         9 100.0%     3d     0     0
+  binance        IOST              9         8 100.0%     3d     0     0
+  binance        IOTA              9         8 100.0%     3d     0     0
+  binance        IOTX              9         8 100.0%     3d     0     0
+  binance        IP               18         9 100.0%     3d     0     0
+  binance        IR               18         9 100.0%     3d     0     0
+  binance        IRYS             18         9 100.0%     3d     0     0
+  binance        JASMY             9         8 100.0%     3d     0     0
+  binance        JCT              18         9 100.0%     3d     0     0
+  binance        JELLYJELLY       18         9 100.0%     3d     0     0
+  binance        JOE               9         8 100.0%     3d     0     0
+  binance        JST              18         9 100.0%     3d     0     0
+  binance        JTO              18         9 100.0%     3d     0     0
+  binance        JUP              18         9 100.0%     3d     0     0
+  binance        KAIA             18         9 100.0%     3d     0     0
+  binance        KAITO            18         9 100.0%     3d     0     0
+  binance        KAS              18         9 100.0%     3d     0     0
+  binance        KAVA             18         9 100.0%     3d     0     0
+  binance        KERNEL           18         9 100.0%     3d     0     0
+  binance        KGEN             18         9 100.0%     3d     0     0
+  binance        KITE             18         9 100.0%     3d     0     0
+  binance        KMNO             18         9 100.0%     3d     0     0
+  binance        KNC               9         8 100.0%     3d     0     0
+  binance        KOMA             18         9 100.0%     3d     0     0
+  binance        KSM               9         8 100.0%     3d     0     0
+  binance        LA               18         9 100.0%     3d     0     0
+  binance        LAB              18         9 100.0%     3d     0     0
+  binance        LAYER            18         9 100.0%     3d     0     0
+  binance        LDO               9         8 100.0%     3d     0     0
+  binance        LIGHT            18         9 100.0%     3d     0     0
+  binance        LINEA            18         9 100.0%     3d     0     0
+  binance        LINK              9         8 100.0%     3d     0     0
+  binance        LISTA            18         9 100.0%     3d     0     0
+  binance        LIT              18         9 100.0%     3d     0     0
+  binance        LPT              17         9 100.0%     3d     0     0
+  binance        LQTY              9         8 100.0%     3d     0     0
+  binance        LRC              17         9 100.0%     3d     0     0
+  binance        LSK              18         9 100.0%     3d     0     0
+  binance        LTC               9         8 100.0%     3d     0     0
+  binance        LUMIA            18         9 100.0%     3d     0     0
+  binance        LUNA2            18         9 100.0%     3d     0     0
+  binance        LYN              18         9 100.0%     3d     0     0
+  binance        M                18         9 100.0%     3d     0     0
+  binance        MAGIC            18         9 100.0%     3d     0     0
+  binance        MAGMA            18         9 100.0%     3d     0     0
+  binance        MANA              9         8 100.0%     3d     0     0
+  binance        MANTA            18         9 100.0%     3d     0     0
+  binance        MASK             18         9 100.0%     3d     0     0
+  binance        MATIC             9         8 100.0%     3d     0     0
+  binance        MAV               9         8 100.0%     3d     0     0
+  binance        MAVIA            18         9 100.0%     3d     0     0
+  binance        MBOX             18         9 100.0%     3d     0     0
+  binance        ME               56         9 100.0%     3d     0     0
+  binance        MEGA             18         9 100.0%     3d     0     0
+  binance        MELANIA          18         9 100.0%     3d     0     0
+  binance        MEME             18         9 100.0%     3d     0     0
+  binance        MERL             18         9 100.0%     3d     0     0
+  binance        MET              18         9 100.0%     3d     0     0
+  binance        METIS            18         9 100.0%     3d     0     0
+  binance        MEW              18         9 100.0%     3d     0     0
+  binance        MINA              9         8 100.0%     3d     0     0
+  binance        MIRA             18         9 100.0%     3d     0     0
+  binance        MITO             18         9 100.0%     3d     0     0
+  binance        MLN              18         9 100.0%     3d     0     0
+  binance        MMT              18         9 100.0%     3d     0     0
+  binance        MOCA             18         9 100.0%     3d     0     0
+  binance        MON              18         9 100.0%     3d     0     0
+  binance        MOODENG          18         9 100.0%     3d     0     0
+  binance        MORPHO           18         9 100.0%     3d     0     0
+  binance        MOVE             51         9 100.0%     3d     0     0
+  binance        MOVR             18         9 100.0%     3d     0     0
+  binance        MSTR              9         9 100.0%     3d     0     0
+  binance        MTL               9         8 100.0%     3d     0     0
+  binance        MUBARAK          18         9 100.0%     3d     0     0
+  binance        MYX              18         9 100.0%     3d     0     0
+  binance        NAORIS           18         9 100.0%     3d     0     0
+  binance        NEAR              9         8 100.0%     3d     0     0
+  binance        NEIRO            18         9 100.0%     3d     0     0
+  binance        NEO               9         8 100.0%     3d     0     0
+  binance        NEWT             18         9 100.0%     3d     0     0
+  binance        NFP              18         9 100.0%     3d     0     0
+  binance        NIGHT            18         9 100.0%     3d     0     0
+  binance        NIL              18         9 100.0%     3d     0     0
+  binance        NMR              18         9 100.0%     3d     0     0
+  binance        NOM              18         9 100.0%     3d     0     0
+  binance        NOT              18         9 100.0%     3d     0     0
+  binance        NTRN             18         9 100.0%     3d     0     0
+  binance        NXPC             18         9 100.0%     3d     0     0
+  binance        OG               18         9 100.0%     3d     0     0
+  binance        OGN               9         8 100.0%     3d     0     0
+  binance        OL               18         9 100.0%     3d     0     0
+  binance        OM               55         9 100.0%     3d     0     0
+  binance        ON               18         9 100.0%     3d     0     0
+  binance        ONDO             18         9 100.0%     3d     0     0
+  binance        ONE               9         8 100.0%     3d     0     0
+  binance        ONG              18         9 100.0%     3d     0     0
+  binance        ONT              18         9 100.0%     3d     0     0
+  binance        OP                9         8 100.0%     3d     0     0
+  binance        OPEN             18         9 100.0%     3d     0     0
+  binance        ORCA             18         9 100.0%     3d     0     0
+  binance        ORDER             9         8 100.0%     3d     0     0
+  binance        ORDI             18         9 100.0%     3d     0     0
+  binance        OXT               9         8 100.0%     3d     0     0
+  binance        PARTI            18         9 100.0%     3d     0     0
+  binance        PAXG             18         9 100.0%     3d     0     0
+  binance        PENDLE            9         8 100.0%     3d     0     0
+  binance        PENGU            18         9 100.0%     3d     0     0
+  binance        PEOPLE            9         8 100.0%     3d     0     0
+  binance        PHA              18         9 100.0%     3d     0     0
+  binance        PHB               9         8 100.0%     3d     0     0
+  binance        PIEVERSE         18         9 100.0%     3d     0     0
+  binance        PIPPIN           18         9 100.0%     3d     0     0
+  binance        PIXEL            18         9 100.0%     3d     0     0
+  binance        PLAY             18         9 100.0%     3d     0     0
+  binance        PLTR              9         9 100.0%     3d     0     0
+  binance        PLUME            18         9 100.0%     3d     0     0
+  binance        PNUT             18         9 100.0%     3d     0     0
+  binance        POL              18         9 100.0%     3d     0     0
+  binance        POLYX            18         9 100.0%     3d     0     0
+  binance        POPCAT           18         9 100.0%     3d     0     0
+  binance        PORTAL           18         9 100.0%     3d     0     0
+  binance        POWER            18         9 100.0%     3d     0     0
+  binance        POWR             18         9 100.0%     3d     0     0
+  binance        PROM             18         9 100.0%     3d     0     0
+  binance        PROMPT           18         9 100.0%     3d     0     0
+  binance        PROVE            18         9 100.0%     3d     0     0
+  binance        PTB              18         9 100.0%     3d     0     0
+  binance        PUFFER           18         9 100.0%     3d     0     0
+  binance        PUMP             18         9 100.0%     3d     0     0
+  binance        PUMPBTC          18         9 100.0%     3d     0     0
+  binance        PUNDIX           18         9 100.0%     3d     0     0
+  binance        PYTH             18         9 100.0%     3d     0     0
+  binance        Q                18         9 100.0%     3d     0     0
+  binance        QNT               9         8 100.0%     3d     0     0
+  binance        QTUM              9         8 100.0%     3d     0     0
+  binance        RARE             18         9 100.0%     3d     0     0
+  binance        RAVE             18         9 100.0%     3d     0     0
+  binance        RAYSOL           18         9 100.0%     3d     0     0
+  binance        RDNT              9         8 100.0%     3d     0     0
+  binance        RECALL           18         9 100.0%     3d     0     0
+  binance        RED              18         9 100.0%     3d     0     0
+  binance        RENDER           18         9 100.0%     3d     0     0
+  binance        RESOLV           18         9 100.0%     3d     0     0
+  binance        REZ              18         9 100.0%     3d     0     0
+  binance        RIF              18         9 100.0%     3d     0     0
+  binance        RIVER            17         9 100.0%     3d     0     0
+  binance        RLC               9         8 100.0%     3d     0     0
+  binance        RLS              18         9 100.0%     3d     0     0
+  binance        RONIN            18         9 100.0%     3d     0     0
+  binance        ROSE              9         8 100.0%     3d     0     0
+  binance        RPL              18         9 100.0%     3d     0     0
+  binance        RSR               9         8 100.0%     3d     0     0
+  binance        RUNE              9         8 100.0%     3d     0     0
+  binance        RVN              18         9 100.0%     3d     0     0
+  binance        S                18         9 100.0%     3d     0     0
+  binance        SAFE             18         9 100.0%     3d     0     0
+  binance        SAGA             18         9 100.0%     3d     0     0
+  binance        SAHARA           18         9 100.0%     3d     0     0
+  binance        SAND              9         8 100.0%     3d     0     0
+  binance        SANTOS           18         9 100.0%     3d     0     0
+  binance        SAPIEN           18         9 100.0%     3d     0     0
+  binance        SCR              18         9 100.0%     3d     0     0
+  binance        SCRT             18         9 100.0%     3d     0     0
+  binance        SEI               9         8 100.0%     3d     0     0
+  binance        SENT             72         9 100.0%     3d     0     0
+  binance        SFP               9         8 100.0%     3d     0     0
+  binance        SHELL            18         9 100.0%     3d     0     0
+  binance        SIGN             18         9 100.0%     3d     0     0
+  binance        SIREN            18         9 100.0%     3d     0     0
+  binance        SKL              18         9 100.0%     3d     0     0
+  binance        SKR              18         9 100.0%     3d     0     0
+  binance        SKY              18         9 100.0%     3d     0     0
+  binance        SKYAI            18         9 100.0%     3d     0     0
+  binance        SLP              18         9 100.0%     3d     0     0
+  binance        SNX               9         8 100.0%     3d     0     0
+  binance        SOL              91        90 100.0%    30d     0     0
+  binance        SOLV             18         9 100.0%     3d     0     0
+  binance        SOMI             18         9 100.0%     3d     0     0
+  binance        SONIC            18         9 100.0%     3d     0     0
+  binance        SOON             18         9 100.0%     3d     0     0
+  binance        SOPH             18         9 100.0%     3d     0     0
+  binance        SPACE            18         9 100.0%     3d     0     0
+  binance        SPELL             9         8 100.0%     3d     0     0
+  binance        SPK              18         9 100.0%     3d     0     0
+  binance        SPORTFUN         18         9 100.0%     3d     0     0
+  binance        SPX              18         9 100.0%     3d     0     0
+  binance        SQD              18         9 100.0%     3d     0     0
+  binance        SSV               9         8 100.0%     3d     0     0
+  binance        STABLE           18         9 100.0%     3d     0     0
+  binance        STBL             18         9 100.0%     3d     0     0
+  binance        STEEM            18         9 100.0%     3d     0     0
+  binance        STG               9         8 100.0%     3d     0     0
+  binance        STO              18         9 100.0%     3d     0     0
+  binance        STORJ            18         9 100.0%     3d     0     0
+  binance        STRK             18         9 100.0%     3d     0     0
+  binance        STX               9         8 100.0%     3d     0     0
+  binance        SUI               9         8 100.0%     3d     0     0
+  binance        SUN              18         9 100.0%     3d     0     0
+  binance        SUPER            18         9 100.0%     3d     0     0
+  binance        SUSHI             9         8 100.0%     3d     0     0
+  binance        SWARMS           18         9 100.0%     3d     0     0
+  binance        SXT              18         9 100.0%     3d     0     0
+  binance        SYN              18         9 100.0%     3d     0     0
+  binance        SYRUP            18         9 100.0%     3d     0     0
+  binance        SYS              18         9 100.0%     3d     0     0
+  binance        T                18         9 100.0%     3d     0     0
+  binance        TA               18         9 100.0%     3d     0     0
+  binance        TAC              18         9 100.0%     3d     0     0
+  binance        TAG              18         9 100.0%     3d     0     0
+  binance        TAIKO            18         9 100.0%     3d     0     0
+  binance        TAKE             18         9 100.0%     3d     0     0
+  binance        TAO              18         9 100.0%     3d     0     0
+  binance        THE              18         9 100.0%     3d     0     0
+  binance        THETA             9         8 100.0%     3d     0     0
+  binance        TIA              18         9 100.0%     3d     0     0
+  binance        TLM               9         8 100.0%     3d     0     0
+  binance        TNSR             18         9 100.0%     3d     0     0
+  binance        TON              18         9 100.0%     3d     0     0
+  binance        TOSHI            18         9 100.0%     3d     0     0
+  binance        TOWNS            18         9 100.0%     3d     0     0
+  binance        TRADOOR          18         9 100.0%     3d     0     0
+  binance        TRB              18         9 100.0%     3d     0     0
+  binance        TREE             18         9 100.0%     3d     0     0
+  binance        TRIA             18         9 100.0%     3d     0     0
+  binance        TRU               9         8 100.0%     3d     0     0
+  binance        TRUMP            18         9 100.0%     3d     0     0
+  binance        TRUST            18         9 100.0%     3d     0     0
+  binance        TRUTH            18         9 100.0%     3d     0     0
+  binance        TRX               9         8 100.0%     3d     0     0
+  binance        TSLA              9         9 100.0%     3d     0     0
+  binance        TST              18         9 100.0%     3d     0     0
+  binance        TURBO            18         9 100.0%     3d     0     0
+  binance        TURTLE           18         9 100.0%     3d     0     0
+  binance        TUT              18         9 100.0%     3d     0     0
+  binance        TWT              18         9 100.0%     3d     0     0
+  binance        UAI              18         9 100.0%     3d     0     0
+  binance        UB               18         9 100.0%     3d     0     0
+  binance        UMA              18         9 100.0%     3d     0     0
+  binance        UNI               9         8 100.0%     3d     0     0
+  binance        US               18         9 100.0%     3d     0     0
+  binance        USDC              9         8 100.0%     3d     0     0
+  binance        USELESS          18         9 100.0%     3d     0     0
+  binance        USTC             18         9 100.0%     3d     0     0
+  binance        USUAL            18         9 100.0%     3d     0     0
+  binance        VANA             18         9 100.0%     3d     0     0
+  binance        VANRY            18         9 100.0%     3d     0     0
+  binance        VELODROME        18         9 100.0%     3d     0     0
+  binance        VELVET           18         9 100.0%     3d     0     0
+  binance        VET               9         8 100.0%     3d     0     0
+  binance        VFY              18         9 100.0%     3d     0     0
+  binance        VIC              18         9 100.0%     3d     0     0
+  binance        VINE             18         9 100.0%     3d     0     0
+  binance        VIRTUAL          18         9 100.0%     3d     0     0
+  binance        VTHO             18         9 100.0%     3d     0     0
+  binance        VVV              18         9 100.0%     3d     0     0
+  binance        W                18         9 100.0%     3d     0     0
+  binance        WAL              18         9 100.0%     3d     0     0
+  binance        WAXP             18         9 100.0%     3d     0     0
+  binance        WCT              18         9 100.0%     3d     0     0
+  binance        WET              18         9 100.0%     3d     0     0
+  binance        WIF              18         9 100.0%     3d     0     0
+  binance        WLD               9         8 100.0%     3d     0     0
+  binance        WLFI             18         9 100.0%     3d     0     0
+  binance        WOO               9         8 100.0%     3d     0     0
+  binance        XAG              18         9 100.0%     3d     0     0
+  binance        XAI              18         9 100.0%     3d     0     0
+  binance        XAN              18         9 100.0%     3d     0     0
+  binance        XAU              18         9 100.0%     3d     0     0
+  binance        XLM               9         8 100.0%     3d     0     0
+  binance        XMR               9         8 100.0%     3d     0     0
+  binance        XNY              18         9 100.0%     3d     0     0
+  binance        XPD              18         9 100.0%     3d     0     0
+  binance        XPIN             18         9 100.0%     3d     0     0
+  binance        XPL              18         9 100.0%     3d     0     0
+  binance        XPT              18         9 100.0%     3d     0     0
+  binance        XRP               9         8 100.0%     3d     0     0
+  binance        XTZ              18         9 100.0%     3d     0     0
+  binance        XVG               9         8 100.0%     3d     0     0
+  binance        XVS               9         8 100.0%     3d     0     0
+  binance        YB               18         9 100.0%     3d     0     0
+  binance        YFI               9         8 100.0%     3d     0     0
+  binance        YGG              18         9 100.0%     3d     0     0
+  binance        ZAMA             18         9 100.0%     3d     0     0
+  binance        ZBT              18         9 100.0%     3d     0     0
+  binance        ZEC               9         8 100.0%     3d     0     0
+  binance        ZEN               9         8 100.0%     3d     0     0
+  binance        ZEREBRO          18         9 100.0%     3d     0     0
+  binance        ZETA             18         9 100.0%     3d     0     0
+  binance        ZIL              18         9 100.0%     3d     0     0
+  binance        ZK               18         9 100.0%     3d     0     0
+  binance        ZKC              17         9 100.0%     3d     0     0
+  binance        ZKJ              18         9 100.0%     3d     0     0
+  binance        ZKP              18         9 100.0%     3d     0     0
+  binance        ZORA             18         9 100.0%     3d     0     0
+  binance        ZRO              18         9 100.0%     3d     0     0
+  binance        ZRX              18         9 100.0%     3d     0     0
+  binance        币安人生             18         9 100.0%     3d     0     0
+  binance        我踏马来了            18         9 100.0%     3d     0     0
+  bitget         BTC             100       100 100.0%    33d     0     0
+  bitget         ETH             100       100 100.0%    33d     0     0
+  bitget         SOL             100       100 100.0%    33d     0     0
+  bybit          BTC              90        90 100.0%    30d     0     0
+  bybit          ETH              90        90 100.0%    30d     0     0
+  bybit          SOL              90        90 100.0%    30d     0     0
+  hyperliquid    0G               72        72 100.0%     3d     0     0
+  hyperliquid    2Z               72        72 100.0%     3d     0     0
+  hyperliquid    AAVE             72        72 100.0%     3d     0     0
+  hyperliquid    ACE              72        72 100.0%     3d     0     0
+  hyperliquid    ADA              72        72 100.0%     3d     0     0
+  hyperliquid    AERO             72        72 100.0%     3d     0     0
+  hyperliquid    AI               72        72 100.0%     3d     0     0
+  hyperliquid    AI16Z            72        72 100.0%     3d     0     0
+  hyperliquid    AIXBT            72        72 100.0%     3d     0     0
+  hyperliquid    ALGO             72        72 100.0%     3d     0     0
+  hyperliquid    ALT              72        72 100.0%     3d     0     0
+  hyperliquid    ANIME            72        72 100.0%     3d     0     0
+  hyperliquid    APE              72        72 100.0%     3d     0     0
+  hyperliquid    APEX            500       499 100.0%    21d     0     0
+  hyperliquid    ARK              72        72 100.0%     3d     0     0
+  hyperliquid    ASTER           720       720 100.0%    30d     0     0
+  hyperliquid    ATOM            720       720 100.0%    30d     0     0
+  hyperliquid    AVAX             72        72 100.0%     3d     0     0
+  hyperliquid    AVNT             72        72 100.0%     3d     0     0
+  hyperliquid    AXS              72        72 100.0%     3d     0     0
+  hyperliquid    AZTEC            72        72 100.0%     3d     0     0
+  hyperliquid    BABY             72        72 100.0%     3d     0     0
+  hyperliquid    BADGER           72        72 100.0%     3d     0     0
+  hyperliquid    BANANA           72        72 100.0%     3d     0     0
+  hyperliquid    BCH              72        72 100.0%     3d     0     0
+  hyperliquid    BERA            719       720  99.9%    30d     0     0
+  hyperliquid    BIGTIME          72        72 100.0%     3d     0     0
+  hyperliquid    BIO              72        72 100.0%     3d     0     0
+  hyperliquid    BLAST            72        72 100.0%     3d     0     0
+  hyperliquid    BLUR            720       720 100.0%    30d     0     0
+  hyperliquid    BLZ              72        72 100.0%     3d     0     0
+  hyperliquid    BNB              72        72 100.0%     3d     0     0
+  hyperliquid    BNT             720       720 100.0%    30d     0     0
+  hyperliquid    BOME            572       720  79.4%    30d     1     0
+  hyperliquid    BTC             722       722 100.0%    30d     0     0
+  hyperliquid    CANTO            72        72 100.0%     3d     0     0
+  hyperliquid    CC              720       720 100.0%    30d     0     0
+  hyperliquid    CELO             72        72 100.0%     3d     0     0
+  hyperliquid    COMP            500       499 100.0%    21d     0     0
+  hyperliquid    CRV             500       499 100.0%    21d     0     0
+  hyperliquid    ETH             720       719 100.0%    30d     0     0
+  hyperliquid    FARTCOIN        720       720 100.0%    30d     0     0
+  hyperliquid    FET             720       720 100.0%    30d     0     0
+  hyperliquid    FIL             720       720 100.0%    30d     0     0
+  hyperliquid    FOGO             72        72 100.0%     3d     0     0
+  hyperliquid    FRIEND           72        72 100.0%     3d     0     0
+  hyperliquid    FTM              72        72 100.0%     3d     0     0
+  hyperliquid    FTT              72        72 100.0%     3d     0     0
+  hyperliquid    FXS              72        72 100.0%     3d     0     0
+  hyperliquid    GALA             72        72 100.0%     3d     0     0
+  hyperliquid    GAS              72        72 100.0%     3d     0     0
+  hyperliquid    GMT              72        72 100.0%     3d     0     0
+  hyperliquid    GMX              72        72 100.0%     3d     0     0
+  hyperliquid    GOAT             72        72 100.0%     3d     0     0
+  hyperliquid    GRASS            72        72 100.0%     3d     0     0
+  hyperliquid    GRIFFAIN         72        72 100.0%     3d     0     0
+  hyperliquid    HBAR             72        72 100.0%     3d     0     0
+  hyperliquid    HEMI             72        72 100.0%     3d     0     0
+  hyperliquid    HMSTR           720       720 100.0%    30d     0     0
+  hyperliquid    HPOS            572       720  79.4%    30d     1     0
+  hyperliquid    HYPE             72        72 100.0%     3d     0     0
+  hyperliquid    ICP             572       720  79.4%    30d     1     0
+  hyperliquid    ILV             500       499 100.0%    21d     0     0
+  hyperliquid    IMX              72        72 100.0%     3d     0     0
+  hyperliquid    INIT            720       720 100.0%    30d     0     0
+  hyperliquid    INJ              72        72 100.0%     3d     0     0
+  hyperliquid    MON              72        72 100.0%     3d     0     0
+  hyperliquid    MOODENG         720       720 100.0%    30d     0     0
+  hyperliquid    MORPHO           72        72 100.0%     3d     0     0
+  hyperliquid    MOVE             72        72 100.0%     3d     0     0
+  hyperliquid    MYRO            720       720 100.0%    30d     0     0
+  hyperliquid    NEAR             72        72 100.0%     3d     0     0
+  hyperliquid    NEIROETH         72        72 100.0%     3d     0     0
+  hyperliquid    NEO             720       720 100.0%    30d     0     0
+  hyperliquid    NFTI             72        72 100.0%     3d     0     0
+  hyperliquid    NIL              72        72 100.0%     3d     0     0
+  hyperliquid    NOT             720       720 100.0%    30d     0     0
+  hyperliquid    NTRN             72        72 100.0%     3d     0     0
+  hyperliquid    NXPC             72        72 100.0%     3d     0     0
+  hyperliquid    OGN             720       720 100.0%    30d     0     0
+  hyperliquid    OM               70        72  97.2%     3d     0     0
+  hyperliquid    OMNI             72        72 100.0%     3d     0     0
+  hyperliquid    ONDO            720       720 100.0%    30d     0     0
+  hyperliquid    OP               72        72 100.0%     3d     0     0
+  hyperliquid    ORBS             72        72 100.0%     3d     0     0
+  hyperliquid    ORDI             72        72 100.0%     3d     0     0
+  hyperliquid    OX              720       720 100.0%    30d     0     0
+  hyperliquid    PANDORA          72        72 100.0%     3d     0     0
+  hyperliquid    PAXG             72        72 100.0%     3d     0     0
+  hyperliquid    PENDLE           72        72 100.0%     3d     0     0
+  hyperliquid    PIXEL           572       720  79.4%    30d     1     0
+  hyperliquid    SOL             720       719 100.0%    30d     0     0
+  hyperliquid    SOPH             72        72 100.0%     3d     0     0
+  hyperliquid    SPX             720       720 100.0%    30d     0     0
+  hyperliquid    STABLE           72        72 100.0%     3d     0     0
+  lighter        ARB            1499      1499 100.0%    62d     0     0
+  lighter        AVAX           1499      1499 100.0%    62d     0     0
+  lighter        BTC            1499      1499 100.0%    62d     0     0
+  lighter        DOGE           1499      1499 100.0%    62d     0     0
+  lighter        ETH            1499      1499 100.0%    62d     0     0
+  lighter        OP             1499      1499 100.0%    62d     0     0
+  lighter        SOL            1499      1499 100.0%    62d     0     0
+──────────────────────────────────────────────────────────────────────────────────────────
+
+  Coverage by exchange:
+    binance         554 symbols  avg coverage: 100.0%  total gaps: 2
+    bitget            3 symbols  avg coverage: 100.0%  total gaps: 0
+    bybit             3 symbols  avg coverage: 100.0%  total gaps: 0
+    hyperliquid      95 symbols  avg coverage: 99.1%  total gaps: 4
+    lighter           7 symbols  avg coverage: 100.0%  total gaps: 0
+
+
+==========================================================================================
+  DETAILED ISSUES
+==========================================================================================
+
+============================================================
+  BINANCE / 0G
+============================================================
+  Frequency changes detected:
+    1hr funding for ~2 days (57 records) [2026-02-12 17:00 → 2026-02-15 02:00]
+    2hr funding for ~0 days (1 records) [2026-02-15 02:00 → 2026-02-15 04:00]
+    4hr funding for ~0 days (3 records) [2026-02-15 04:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / AIA
+============================================================
+  Frequency changes detected:
+    1hr funding for ~0 days (1 records) [2026-01-20 07:00 → 2026-01-20 08:00]
+    4hr funding for ~26 days (158 records) [2026-01-20 08:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / CLO
+============================================================
+  Frequency changes detected:
+    1hr funding for ~0 days (11 records) [2026-01-16 17:00 → 2026-01-17 04:00]
+    4hr funding for ~5 days (30 records) [2026-01-17 04:00 → 2026-01-22 04:00]
+    8hr funding for ~0 days (1 records) [2026-01-22 04:00 → 2026-01-22 12:00]
+    4hr funding for ~4 days (22 records) [2026-01-22 12:00 → 2026-01-26 04:00]
+    8hr funding for ~0 days (1 records) [2026-01-26 04:00 → 2026-01-26 12:00]
+    4hr funding for ~2 days (11 records) [2026-01-26 12:00 → 2026-01-28 08:00]
+    8hr funding for ~0 days (1 records) [2026-01-28 08:00 → 2026-01-28 16:00]
+    4hr funding for ~3 days (20 records) [2026-01-28 16:00 → 2026-02-01 00:00]
+    8hr funding for ~0 days (1 records) [2026-02-01 00:00 → 2026-02-01 08:00]
+    4hr funding for ~3 days (16 records) [2026-02-01 08:00 → 2026-02-04 00:00]
+    8hr funding for ~0 days (1 records) [2026-02-04 00:00 → 2026-02-04 08:00]
+    4hr funding for ~11 days (68 records) [2026-02-04 08:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / COW
+============================================================
+  Frequency changes detected:
+    4hr funding for ~29 days (172 records) [2026-01-16 20:00 → 2026-02-14 12:00]
+    8hr funding for ~0 days (1 records) [2026-02-14 12:00 → 2026-02-14 20:00]
+    4hr funding for ~1 days (5 records) [2026-02-14 20:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / D
+============================================================
+  Frequency changes detected:
+    4hr funding for ~4 days (22 records) [2026-01-16 20:00 → 2026-01-20 12:00]
+    8hr funding for ~0 days (1 records) [2026-01-20 12:00 → 2026-01-20 20:00]
+    4hr funding for ~26 days (155 records) [2026-01-20 20:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / DUSK
+============================================================
+  Frequency changes detected:
+    8hr funding for ~2 days (3 records) [2026-01-17 08:00 → 2026-01-19 09:00]
+    1hr funding for ~5 days (111 records) [2026-01-19 09:00 → 2026-01-24 00:00]
+    4hr funding for ~16 days (94 records) [2026-01-24 00:00 → 2026-02-08 16:00]
+    8hr funding for ~0 days (1 records) [2026-02-08 16:00 → 2026-02-09 00:00]
+    4hr funding for ~7 days (40 records) [2026-02-09 00:00 → 2026-02-15 16:00]
+  Gaps (>16hr):
+    2026-01-18 00:00 → 2026-01-19 00:00 (24.0hr)
+
+============================================================
+  BINANCE / DYM
+============================================================
+  Frequency changes detected:
+    4hr funding for ~26 days (156 records) [2026-01-16 20:00 → 2026-02-11 20:00]
+    8hr funding for ~0 days (1 records) [2026-02-11 20:00 → 2026-02-12 04:00]
+    4hr funding for ~4 days (21 records) [2026-02-12 04:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / ELSA
+============================================================
+  Frequency changes detected:
+    1hr funding for ~3 days (81 records) [2026-01-22 09:00 → 2026-01-25 18:00]
+    2hr funding for ~0 days (1 records) [2026-01-25 18:00 → 2026-01-25 20:00]
+    4hr funding for ~4 days (21 records) [2026-01-25 20:00 → 2026-01-29 08:00]
+    8hr funding for ~0 days (1 records) [2026-01-29 08:00 → 2026-01-29 16:00]
+    4hr funding for ~17 days (102 records) [2026-01-29 16:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / ENSO
+============================================================
+  Frequency changes detected:
+    4hr funding for ~6 days (38 records) [2026-01-16 20:00 → 2026-01-23 04:00]
+    8hr funding for ~0 days (1 records) [2026-01-23 04:00 → 2026-01-23 12:00]
+    4hr funding for ~1 days (3 records) [2026-01-23 12:00 → 2026-01-24 00:00]
+    8hr funding for ~0 days (1 records) [2026-01-24 00:00 → 2026-01-24 08:00]
+    4hr funding for ~1 days (4 records) [2026-01-24 08:00 → 2026-01-25 00:00]
+    8hr funding for ~1 days (2 records) [2026-01-25 00:00 → 2026-01-25 16:00]
+    4hr funding for ~0 days (2 records) [2026-01-25 16:00 → 2026-01-26 00:00]
+    8hr funding for ~1 days (1 records) [2026-01-26 00:00 → 2026-01-26 16:00]
+    4hr funding for ~1 days (7 records) [2026-01-26 16:00 → 2026-01-27 20:00]
+    8hr funding for ~0 days (1 records) [2026-01-27 20:00 → 2026-01-28 04:00]
+    4hr funding for ~3 days (17 records) [2026-01-28 04:00 → 2026-01-31 00:00]
+    8hr funding for ~0 days (1 records) [2026-01-31 00:00 → 2026-01-31 08:00]
+    4hr funding for ~1 days (6 records) [2026-01-31 08:00 → 2026-02-01 08:00]
+    8hr funding for ~0 days (1 records) [2026-02-01 08:00 → 2026-02-01 16:00]
+    4hr funding for ~14 days (84 records) [2026-02-01 16:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / F
+============================================================
+  Frequency changes detected:
+    4hr funding for ~17 days (99 records) [2026-01-16 20:00 → 2026-02-02 08:00]
+    8hr funding for ~0 days (1 records) [2026-02-02 08:00 → 2026-02-02 20:00]
+    4hr funding for ~0 days (1 records) [2026-02-02 20:00 → 2026-02-03 00:00]
+    8hr funding for ~0 days (1 records) [2026-02-03 00:00 → 2026-02-03 08:00]
+    4hr funding for ~5 days (29 records) [2026-02-03 08:00 → 2026-02-08 04:00]
+    8hr funding for ~0 days (1 records) [2026-02-08 04:00 → 2026-02-08 12:00]
+    4hr funding for ~7 days (43 records) [2026-02-08 12:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / FLOW
+============================================================
+  Frequency changes detected:
+    1hr funding for ~1 days (13 records) [2026-01-16 17:00 → 2026-01-17 06:00]
+    2hr funding for ~0 days (1 records) [2026-01-17 06:00 → 2026-01-17 08:00]
+    4hr funding for ~29 days (176 records) [2026-01-17 08:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / FRAX
+============================================================
+  Frequency changes detected:
+    8hr funding for ~1 days (1 records) [2026-01-16 20:00 → 2026-01-18 00:00]
+    4hr funding for ~8 days (47 records) [2026-01-18 00:00 → 2026-01-25 20:00]
+    8hr funding for ~0 days (1 records) [2026-01-25 20:00 → 2026-01-26 04:00]
+    4hr funding for ~20 days (123 records) [2026-01-26 04:00 → 2026-02-15 16:00]
+  Gaps (>16hr):
+    2026-01-16 20:00 → 2026-01-18 00:00 (28.0hr)
+
+============================================================
+  BINANCE / G
+============================================================
+  Frequency changes detected:
+    4hr funding for ~8 days (50 records) [2026-01-16 20:00 → 2026-01-25 04:00]
+    8hr funding for ~0 days (1 records) [2026-01-25 04:00 → 2026-01-25 12:00]
+    4hr funding for ~11 days (63 records) [2026-01-25 12:00 → 2026-02-05 00:00]
+    8hr funding for ~0 days (1 records) [2026-02-05 00:00 → 2026-02-05 08:00]
+    4hr funding for ~10 days (62 records) [2026-02-05 08:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / GAS
+============================================================
+  Frequency changes detected:
+    4hr funding for ~16 days (94 records) [2026-01-16 20:00 → 2026-02-01 12:00]
+    8hr funding for ~0 days (1 records) [2026-02-01 12:00 → 2026-02-01 20:00]
+    4hr funding for ~0 days (1 records) [2026-02-01 20:00 → 2026-02-02 00:00]
+    8hr funding for ~0 days (1 records) [2026-02-02 00:00 → 2026-02-02 08:00]
+    4hr funding for ~13 days (80 records) [2026-02-02 08:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / LPT
+============================================================
+  Frequency changes detected:
+    4hr funding for ~0 days (1 records) [2026-02-12 20:00 → 2026-02-13 00:00]
+    8hr funding for ~0 days (1 records) [2026-02-13 00:00 → 2026-02-13 08:00]
+    4hr funding for ~2 days (14 records) [2026-02-13 08:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / LRC
+============================================================
+  Frequency changes detected:
+    4hr funding for ~1 days (6 records) [2026-02-12 20:00 → 2026-02-13 20:00]
+    8hr funding for ~0 days (1 records) [2026-02-13 20:00 → 2026-02-14 04:00]
+    4hr funding for ~1 days (9 records) [2026-02-14 04:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / ME
+============================================================
+  Frequency changes detected:
+    1hr funding for ~2 days (49 records) [2026-02-12 17:00 → 2026-02-14 18:00]
+    2hr funding for ~0 days (1 records) [2026-02-14 18:00 → 2026-02-14 20:00]
+    4hr funding for ~1 days (5 records) [2026-02-14 20:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / MOVE
+============================================================
+  Frequency changes detected:
+    1hr funding for ~2 days (43 records) [2026-02-12 17:00 → 2026-02-14 12:00]
+    4hr funding for ~1 days (7 records) [2026-02-14 12:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / OM
+============================================================
+  Frequency changes detected:
+    4hr funding for ~1 days (4 records) [2026-02-12 20:00 → 2026-02-13 13:00]
+    2hr funding for ~0 days (1 records) [2026-02-13 13:00 → 2026-02-13 15:00]
+    1hr funding for ~2 days (49 records) [2026-02-13 15:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / RIVER
+============================================================
+  Frequency changes detected:
+    4hr funding for ~2 days (12 records) [2026-02-12 20:00 → 2026-02-14 20:00]
+    8hr funding for ~0 days (1 records) [2026-02-14 20:00 → 2026-02-15 04:00]
+    4hr funding for ~0 days (3 records) [2026-02-15 04:00 → 2026-02-15 16:00]
+
+============================================================
+  BINANCE / ZKC
+============================================================
+  Frequency changes detected:
+    4hr funding for ~0 days (2 records) [2026-02-12 20:00 → 2026-02-13 04:00]
+    8hr funding for ~0 days (1 records) [2026-02-13 04:00 → 2026-02-13 12:00]
+    4hr funding for ~2 days (13 records) [2026-02-13 12:00 → 2026-02-15 16:00]
+
+============================================================
+  HYPERLIQUID / BERA
+============================================================
+  Frequency changes detected:
+    1hr funding for ~26 days (629 records) [2026-01-16 17:00 → 2026-02-11 22:00]
+    2hr funding for ~0 days (1 records) [2026-02-11 22:00 → 2026-02-12 00:00]
+    1hr funding for ~4 days (88 records) [2026-02-12 00:00 → 2026-02-15 16:00]
+
+============================================================
+  HYPERLIQUID / BOME
+============================================================
+  Frequency changes detected:
+    1hr funding for ~21 days (499 records) [2026-01-16 17:00 → 2026-02-06 12:00]
+    8hr funding for ~6 days (1 records) [2026-02-06 12:00 → 2026-02-12 17:00]
+    1hr funding for ~3 days (71 records) [2026-02-12 17:00 → 2026-02-15 16:00]
+  Gaps (>2hr):
+    2026-02-06 12:00 → 2026-02-12 17:00 (149.0hr)
+
+============================================================
+  HYPERLIQUID / HPOS
+============================================================
+  Frequency changes detected:
+    1hr funding for ~21 days (499 records) [2026-01-16 17:00 → 2026-02-06 12:00]
+    8hr funding for ~6 days (1 records) [2026-02-06 12:00 → 2026-02-12 17:00]
+    1hr funding for ~3 days (71 records) [2026-02-12 17:00 → 2026-02-15 16:00]
+  Gaps (>2hr):
+    2026-02-06 12:00 → 2026-02-12 17:00 (149.0hr)
+
+============================================================
+  HYPERLIQUID / ICP
+============================================================
+  Frequency changes detected:
+    1hr funding for ~21 days (499 records) [2026-01-16 17:00 → 2026-02-06 12:00]
+    8hr funding for ~6 days (1 records) [2026-02-06 12:00 → 2026-02-12 17:00]
+    1hr funding for ~3 days (71 records) [2026-02-12 17:00 → 2026-02-15 16:00]
+  Gaps (>2hr):
+    2026-02-06 12:00 → 2026-02-12 17:00 (149.0hr)
+
+============================================================
+  HYPERLIQUID / OM
+============================================================
+  Frequency changes detected:
+    1hr funding for ~1 days (17 records) [2026-02-12 17:00 → 2026-02-13 10:00]
+    2hr funding for ~0 days (1 records) [2026-02-13 10:00 → 2026-02-13 12:00]
+    1hr funding for ~0 days (1 records) [2026-02-13 12:00 → 2026-02-13 13:00]
+    2hr funding for ~0 days (1 records) [2026-02-13 13:00 → 2026-02-13 15:00]
+    1hr funding for ~2 days (49 records) [2026-02-13 15:00 → 2026-02-15 16:00]
+
+============================================================
+  HYPERLIQUID / PIXEL
+============================================================
+  Frequency changes detected:
+    1hr funding for ~21 days (499 records) [2026-01-16 17:00 → 2026-02-06 12:00]
+    8hr funding for ~6 days (1 records) [2026-02-06 12:00 → 2026-02-12 17:00]
+    1hr funding for ~3 days (71 records) [2026-02-12 17:00 → 2026-02-15 16:00]
+  Gaps (>2hr):
+    2026-02-06 12:00 → 2026-02-12 17:00 (149.0hr)
+
+==========================================================================================
+  END OF REPORT
+==========================================================================================

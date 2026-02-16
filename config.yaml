@@ -1,0 +1,45 @@
+exchanges:
+  binance:
+    enabled: true
+    funding_interval_hours: 8
+  hyperliquid:
+    enabled: true
+    funding_interval_hours: 1
+  bybit:
+    enabled: true
+    funding_interval_hours: 8
+  okx:
+    enabled: true
+    funding_interval_hours: 8
+  bitget:
+    enabled: true
+    funding_interval_hours: 8
+  lighter:
+    enabled: true
+    funding_interval_hours: 1
+
+# symbols list is now optional. If omitted, use --discover flag to auto-detect all pairs.
+# If provided, acts as a filter/default when --discover is not used.
+# symbols:
+#   - BTC
+#   - ETH
+#   - SOL
+
+lookback_days:
+  - 1
+  - 3
+  - 7
+  - 15
+  - 30
+  - 60
+  - 90
+  - 180
+  - 270
+  - 360
+
+database:
+  path: funding_rates.db
+
+logging:
+  level: INFO
+  file: logs/funding.log
