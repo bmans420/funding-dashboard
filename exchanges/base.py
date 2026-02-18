@@ -57,15 +57,8 @@ class BaseExchangeAdapter(ABC):
                     time.sleep(wait)
         return None
 
-    def validate_rate(self, rate: float) -> bool:
-        """Validate funding rate is within reasonable range."""
-        return -0.01 <= rate <= 0.01  # -1% to +1%
-
     def _make_record(self, symbol: str, funding_rate: float,
                      funding_time: int) -> Optional[dict]:
-        if not self.validate_rate(funding_rate):
-            logger.warning(f"[{self.name}] Rate {funding_rate} for {symbol} out of range, skipping")
-            return None
         return {
             'exchange': self.name,
             'symbol': symbol,
