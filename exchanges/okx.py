@@ -42,7 +42,7 @@ class OKXAdapter(BaseExchangeAdapter):
         url = f"{self.base_url}/api/v5/public/funding-rate-history"
         params = {"instId": inst_id, "limit": str(min(limit, 100))}
         if end_time:
-            params["before"] = str(end_time)
+            params["after"] = str(end_time)
 
         data = self._request("GET", url, params)
         if not data or data.get("code") != "0":
