@@ -43,8 +43,6 @@ class OKXAdapter(BaseExchangeAdapter):
         params = {"instId": inst_id, "limit": str(min(limit, 100))}
         if end_time:
             params["before"] = str(end_time)
-        if start_time:
-            params["after"] = str(start_time)
 
         data = self._request("GET", url, params)
         if not data or data.get("code") != "0":
